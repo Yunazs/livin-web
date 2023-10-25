@@ -1,0 +1,197 @@
+
+/* ------------------------------------------------------------- DEFAULT ------------------------------------------------------------- */
+.about-us-body .title{
+    font-family: baloo-chettan;
+    font-size: 2.3vw;
+    margin-bottom: 3.5vw;
+}
+
+.about-us-body .text{
+    font-size: 1.1vw;
+    line-height: 1.4vw;
+    /* margin: 0;
+    margin-bottom: 1.5vw; */
+}
+
+.about-us-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-box{
+    width: 65%;
+    height: fit-content;
+    margin-top: 4vw;
+    margin-bottom: 8vw;
+    background-color: #182c54;
+    border-radius: 2vw;
+}
+
+.about-us{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw;
+}
+
+.about-us .title{
+    margin-bottom: 3.5vw;
+}
+
+.about-us .text{
+    width: 70%;
+    align-self: center;
+
+}
+
+.company-creation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw;
+}
+
+.company-creation .content{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-creation .content .text-area, .company-creation .content .image-area{
+    width: 45%;
+}
+
+.product{
+    padding: 3vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.livin{
+    width: 70%;
+    padding: 2vw;
+    border: 2px solid var(--colorWhite);
+    border-radius: 3VW;
+}
+
+.livin .title{
+    align-self: self-start;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.livin .title img{
+    width: 3vw;
+    margin: .5vw;
+}
+
+.livin .subtitle{
+    font-family: baloo-chettan;
+    font-size: 1.8vw;
+    margin-top: 1.5vw;
+    color: var(--colorWhite);
+}
+
+.livin .text{
+    font-size: .9vw;
+    margin: 0;
+    margin-top: 1.5vw;
+}
+
+/* ------------------------------------------------------------- MOBILE ------------------------------------------------------------- */
+@media only screen and (max-width: 620px){
+
+    .about-us-box{
+        width: 90%;
+    }
+
+    .about-us-body .title{
+        font-size: 7vw;
+        margin-bottom: 7vw;
+    }
+
+    .about-us-body .text{
+        font-size: 4vw;
+        line-height: 6vw;
+        text-align: justify;
+    }
+
+    .about-us{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+    }
+
+    .about-us .title{
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .about-us .text{
+        width: 90%;
+    }
+
+    .company-creation{
+        padding: 2vw;
+    }
+
+    .company-creation .title{
+        margin-top: 7vw;
+    }
+
+    .company-creation .content{
+        width: 90%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .company-creation .content .text-area, .company-creation .content .image-area{
+        width: 100%;
+    }
+
+    .product{
+        padding: 6vw;
+        padding-bottom: 14vw;
+    }
+
+    .livin{
+        width: 90%;
+        padding: 4vw;
+        border: 2px solid var(--colorWhite);
+        border-radius: 3VW;
+    }
+
+    .livin .title{
+        align-self: self-start;
+        text-align: left;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .livin .title img{
+        width: 8vw;
+        margin-right: 3vw;
+    }
+
+    .livin .subtitle{
+        font-family: baloo-chettan;
+        font-size: 5.2vw;
+        margin-top: 6vw;
+        color: var(--colorWhite);
+    }
+
+    .livin .text{
+        font-size: 3.8vw;
+        margin: 0;
+        margin-top: 4vw;
+    }
+}

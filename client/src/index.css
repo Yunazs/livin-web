@@ -1,0 +1,27 @@
+@font-face {
+    font-family: baloo-chettan;
+    src: url(../baloo-chettan.ttf);
+  }
+  @font-face {
+    font-family: epilogue;
+    src: url(../Epilogue-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: italicEpilogue;
+    src: url(../Epilogue-Italic-VariableFont_wght.ttf);
+  }
+  html{
+    background-color: var(--colorBlueLight);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  :root{
+    --colorWhite: #E8F3F4;
+    --colorOrange: #ED4D2D;
+    --colorBlueLight: #001C4B;
+    --colorBlue: #011940;
+    --colorBlueDark: #1E212B;
+  }

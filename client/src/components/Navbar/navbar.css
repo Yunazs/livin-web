@@ -1,0 +1,153 @@
+.clog{
+    background-color: aqua;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: var(--colorBlueLight);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-logo{
+    height: 55px;
+}
+
+.brand-name{
+    font-family: baloo-chettan;
+    font-size: 35px;
+    color: var(--colorWhite);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.links{
+    font-family: epilogue;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--colorWhite);
+    margin: 1rem;
+    margin-inline: 3.3vw;
+    white-space: nowrap;
+    position: relative;
+}
+
+.links::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--colorWhite);
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+.links:hover::before, .links:focus::before{
+    transform: scaleX(1);
+}
+
+.navbar-login{
+    display: flex;
+}
+
+.navbar-menu-icon{
+    height: 35px;
+    width: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+.bars{
+    height: 7px;
+    width: 100%;
+    background-color: var(--colorWhite);
+    border-radius: .3vh;
+}
+
+.curved1{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(45deg);
+}
+
+.curved2{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-45deg);
+}
+
+.navbar-menu{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBlueLight);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    transition: .5s;
+}
+
+.menu-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    right: 0;
+    transition: .5s;
+}
+
+.navbar-menu-close-icon{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: calc(25px/2);
+    right: 4vw;
+}
+
+@media only screen and (max-width: 1200px){
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .img-logo{
+        margin-left: 4vw;
+    }
+
+    .navbar-menu-icon{
+        display: flex;
+    }
+
+    .navbar-links, .navbar-login{
+        display: none;
+    }
+
+    .navbar-menu{
+        display: block;
+    }
+}

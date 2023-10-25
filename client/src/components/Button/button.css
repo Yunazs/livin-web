@@ -1,0 +1,96 @@
+.button{
+    color: var(--colorWhite);
+    padding: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: .5rem;
+    background-color: var(--colorOrange);
+    font-family: italicEpilogue;
+    font-size: 17px;
+    border-radius: 100vw;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    border: 2px solid var(--colorOrange);
+    white-space: nowrap;
+}
+
+.btn-login{
+    background-color: transparent;
+    border: 2px solid var(--colorOrange);
+    animation: login-unhover .3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.btn-login:hover{
+    animation: login-hover .3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.btn-signin{
+    animation: signin-unhover .3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.btn-signin:hover{
+    animation: signin-hover .3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes login-hover{
+    0%{
+        background-color: transparent;
+        border-color: var(--colorOrange);
+        color: var(--colorWhite);
+    }
+    100%{
+        background-color: var(--colorOrange);
+        border-color: var(--colorOrange);
+        color: var(--colorWhite);
+    }
+}
+
+@keyframes login-unhover{
+    0%{
+        background-color: var(--colorOrange);
+        border-color: var(--colorOrange);
+        color: var(--colorWhite);
+    }
+    100%{
+        background-color: transparent;
+        border-color: var(--colorOrange);
+        color: var(--colorWhite);
+    }
+}
+
+@keyframes signin-hover{
+    0%{
+        background-color: var(--colorOrange);
+        border-color: var(--colorOrange);
+        color: var(--colorWhite);
+    }
+    100%{
+        background-color: var(--colorWhite);
+        border-color: var(--colorWhite);
+        color: var(--colorOrange);
+    }
+}
+
+@keyframes signin-unhover{
+    0%{
+        background-color: var(--colorWhite);
+        border-color: var(--colorWhite);
+        color: var(--colorOrange);
+    }
+    100%{
+        background-color: var(--colorOrange);
+        border-color: var(--colorOrange);
+        color: var(--colorWhite);
+    }
+}

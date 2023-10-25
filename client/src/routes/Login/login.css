@@ -1,0 +1,138 @@
+.login-main{
+    height: 100vh;
+    background-color: var(--colorBlueLight);
+}
+
+.login-logo-box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.login-logo-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.login-box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36vw;
+    height: 49vh;
+    background-image: linear-gradient(90deg, #273f70, #182c54);
+    border-radius: 2rem;
+    box-shadow: 3px 3px 6px #011940;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+}
+
+.login-actual{
+    width: 22rem;
+    font-family: epilogue;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: var(--colorWhite);
+    margin: 3rem;
+}
+
+.login-contact-box{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+}
+
+.contact-icon{
+    margin: .5rem;
+}
+
+.login-title{
+    font-family: baloo-chettan;
+    font-size: 3vw;
+    margin-bottom: .9rem;
+}
+
+.username, .password{
+    width: 100%;
+    height: 2vw;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    border-radius: 100vw;
+    border-style: none;
+    background-color: #1c2c44;
+    margin-bottom: 1.3rem;
+    padding-inline: .5vw;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.username:focus, .password:focus{
+    outline: none;
+    border: 1px solid var(--colorOrange);
+    box-shadow: 0px 0px 10px var(--colorOrange);
+    background-color: #1c2c44;
+}
+
+input{
+    background-color: #1c2c44;
+    color: var(--colorWhite);
+    -webkit-text-fill-color: var(--colorOrange);
+}
+input::placeholder{
+    -webkit-text-fill-color: var(--colorWhite);
+}
+
+.text{
+
+}
+
+.cadastre{
+    color: var(--colorOrange);
+    font-size: .7rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.login-box{
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 620px){
+    .login-box{
+        width: 90%;
+        min-width: 0;
+    }
+
+    .actual{
+        width: 100%;
+        margin: 1rem;
+    }
+    .username, .password{
+        height: 7vw;
+    }
+
+    .controls{
+        justify-content: space-around;
+    }
+
+    .cadastre{
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+}

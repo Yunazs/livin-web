@@ -1,0 +1,12 @@
+.terms-main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorBlueLight);
+}
+.terms-main a{
+    font-size: 1rem;
+    font-family: epilogue;
+    color: var(--colorWhite);
+}

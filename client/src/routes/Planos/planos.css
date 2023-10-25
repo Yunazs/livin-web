@@ -1,0 +1,54 @@
+.plans-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans-titles{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.plans-titles .subtitle{
+    font-family: baloo-chettan;
+    font-size: 2vw;
+    color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+}
+
+.plans{
+    width: 90%;
+    height: 40vw;
+    background-color: darkcyan;
+    display: flex;
+}
+
+.essencial, .premium{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    align-items: center;
+}
+
+.item{
+    width: 90%;
+    display: flex;
+    font-family: epilogue;
+    font-size: 1.1vw;
+    color: var(--colorWhite);
+    background-color: darkmagenta;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.item-title{
+    text-wrap: nowrap;
+}
+
+.item img{
+    width: 1vw;
+    margin-right: .5vw;
+    /* position: relative; */
+}

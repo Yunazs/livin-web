@@ -1,0 +1,285 @@
+.home-body{
+    background-color: var(--colorBlueLight);
+    color: var(--colorWhite);
+}
+
+img {
+    object-fit: contain;
+}
+
+.title{
+    font-family: baloo-chettan;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.welcome, .screen{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vw;
+    width: 100%;
+}
+
+.welcome .text-area{
+    width: 35vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome .title{
+    margin-bottom: 3vw;
+}
+
+.orange{
+    color: var(--colorOrange);
+}
+
+.welcome .text{
+    width: 100%;
+    font-family: epilogue;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-bottom: 1.5vw;
+}
+
+.welcome-image{
+    width: 35vw;
+    height: 35vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.circle{
+    width: 30vw;
+    height: 30vw;
+    background-image: linear-gradient(#ED4D2D,#EE5936,#F38258,#FAB782);
+    border-radius: 50%;
+}
+
+.cellphone-img{
+    width: 135%;
+    position: relative;
+    top: -5vw;
+    left: -7vw;
+}
+
+.divisor-top{
+    width: 100%;
+    height: 15vh;
+}
+
+.blue-light{
+    background-color: var(--colorBlueLight);
+}
+
+.blue{
+    background-color: var(--colorBlue);
+}
+
+.divisor-bottom{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.advantages-screen{
+    width: 100%;
+    height: 50vw;
+    background-color: var(--colorBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.advantages-title{
+    width: 30vw;
+    height: 10wv;
+}
+
+.portrait{
+    width: 70%;
+    height: 70%;
+}
+
+.advantages-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.advantages-items{
+    width: 22%;
+    height: 40%;
+    padding: 1.5%;
+    background-image: linear-gradient(90deg, #273f70, #182c54);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vw;
+    font-family: baloo-chettan;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-inline: 1%;
+}
+
+.advantages-items-image{
+    height: 40%;
+    margin-bottom: 5%;
+}
+
+.comunication-screen{
+    width: 100%;
+    height: 50vw;
+    background-color: var(--colorBlueLight);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comunication-title{
+}
+
+.forum-show{
+    width: 70%;
+    height: 70%;
+    background-color: #273f70;
+    border-radius: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forum-example{
+    width: 40%;
+    height: 80%;
+}
+
+.forum-text-area{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.forum-title{
+    font-family: baloo-chettan;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.forum-text{
+    font-family: baloo-chettan;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+.fill{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBlue);
+}
+
+@media only screen and (max-width: 620px){
+    .welcome-screen{
+        flex-direction: column;
+        height: 92vh;
+    }
+
+    .welcome-text{
+        width: 82vw;
+    }
+
+    .welcome-image{
+        width: calc(35vw*2.5);
+        height: calc(35vw*2.5);
+    }
+
+    .circle{
+        width: calc(30vw*2.5);
+        height: calc(30vw*2.5);
+    }
+
+    .cellphone-img{
+        width: calc(41vw*2.5);
+        position: relative;
+        top: calc(-5vw*2.5);
+        left: calc(-7vw*2.5);
+    }
+
+    .welcome-title{
+        font-size: 8vw;
+        margin-bottom: 8vw;
+    }
+
+    .slogan{
+        width: 100%;
+        font-size: 4.5vw;
+        margin-bottom: 4vw;
+    }
+
+    .divisor{
+        height: 8vh;
+    }
+
+    .advantages-screen{
+        height: 90vw;
+    }
+
+    .advantages-title{
+        width: 80%;
+        font-size: 8vw;
+    }
+
+    .portrait{
+        width: 90%;
+        overflow-x: scroll;
+    }
+
+    .advantages-list{
+        width: 500%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .advantages-items{
+        height: 70%;
+        font-size: 4.8vw;
+        padding-inline: 3%;
+    }
+
+    .comunication-screen{
+        height: fit-content;
+    }
+    
+    .comunication-title{
+        font-size: 8vw;
+    }
+
+    .forum-show{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .forum-text-area{
+        width: 90%;
+    }
+
+    .forum-title{
+        font-size: 5vw;
+    }
+    
+    .forum-text{
+        font-size: 4.8vw;
+    }
+}

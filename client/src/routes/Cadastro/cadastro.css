@@ -1,0 +1,107 @@
+.signin-main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorBlueLight);
+}
+.logo-box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.signin-logo-img{
+    width: 4rem;
+    height: 4rem;
+
+}
+.signin-box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36vw;
+    height: 60vh;
+    background-image: linear-gradient(90deg, #273f70, #182c54);
+    border-radius: 2rem;
+    box-shadow: 3px 3px 6px #011940;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+}
+.actual{
+    width: 22rem;
+    font-family: epilogue;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: var(--colorWhite);
+    margin: 3rem;
+}
+.contact-box{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+}
+.contact-icon{
+    margin: .5rem;
+}
+.title{
+    /* font-family: baloo-chettan;
+    font-size: 1.7rem;
+    margin-bottom: .9rem; */
+}
+.inputbox{
+    width: 100%;
+    height: 1.5rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    border-radius: 100vw;
+    border-style: none;
+    background-color: #1c2c44;
+    margin-bottom: 1.3rem;
+}
+.text{
+    margin-left: .5rem;
+    align-self: flex-start;
+}
+.logue{
+    color: var(--colorOrange);
+    font-size: .7rem;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.terms{
+    font-size: .9rem;
+}
+@media only screen and (max-width: 620px){
+    .signin-box{
+        height: auto;
+        width: 90%;
+        min-width: 0;
+        top: 52%;
+    }
+    .actual{
+        width: 100%;
+        margin: 1rem;
+    }
+    .controls{
+        justify-content: space-around;
+    }
+    .logue{
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+    .contact-box{
+        bottom: 2%;
+    }
+    .inputbox{
+        margin-bottom: .8rem;
+    }
+}

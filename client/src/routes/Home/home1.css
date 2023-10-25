@@ -1,0 +1,272 @@
+
+.a1{background-color: darkblue;}
+.a2{background-color: blue;}
+.a3{background-color: darkcyan;}
+.a4{background-color: darkmagenta;}
+.a5{background-color: blueviolet;}
+
+/* ------------------------------------------------------------- DEFAULT ------------------------------------------------------------- */
+
+.img{
+    object-fit: contain;
+}
+
+.divisor-top{
+    width: 100%;
+    height: 15vh;
+}
+
+.divisor-bottom{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.blue{
+    background-color: var(--colorBlue);
+}
+
+.blue-light{
+    background-color: var(--colorBlueLight);
+}
+
+.orange{
+    color: var(--colorOrange);
+}
+
+.screen{
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title{
+    font-family: baloo-chettan;
+    font-size: 3vw;
+    color: var(--colorWhite);
+    text-align: center;
+}
+
+.text{
+    font-family: epilogue;
+    font-size: 1.4vw;
+    color: var(--colorWhite);
+}
+
+/* ------------------------------------------------------------- WELCOME ------------------------------------------------------------- */
+
+.welcome{
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 45vw;
+}
+
+.welcome .text-area, .welcome .image-area{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome .text{
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+.circle{
+    width: 30vw;
+    height: 30vw;
+    background-image: linear-gradient(#ED4D2D,#EE5936,#F38258,#FAB782);
+    border-radius: 50%;
+}
+
+.circle img{
+    width: 135%;
+    position: relative;
+    top: -15%;
+    left: -22%;
+}
+
+/* ------------------------------------------------------------- ADVANTAGES ------------------------------------------------------------- */
+
+.advantages{
+    background-color: var(--colorBlue);
+}
+
+.advantages .title{
+    width: 30%;
+}
+
+.portrait{
+    width: 70%;
+    height: 80%;
+    /* background-color: blueviolet; */
+}
+
+.advantages .list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.advantages .list .items{
+    width: 22%;
+    height: 40%;
+    background-image: linear-gradient(90deg, #273f70, #182c54);
+    color: var(--colorWhite);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+    border-radius: 2vw;
+    font-family: baloo-chettan;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-inline: 1%;
+}
+
+.items-image{
+    height: 40%;
+    margin-bottom: 5%;
+    object-fit: contain;
+}
+
+/* ------------------------------------------------------------- COMMUNCATION ------------------------------------------------------------- */
+
+.communication{
+    height: 45vw;
+}
+
+.forum{
+    width: 70%;
+    height: 80%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.communication .image-area{
+    width: 40%;
+    height: 80%;
+    /* background-color: darkblue; */
+}
+
+.communication .text-area{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.forum .title{
+    font-size: 2.4vw;
+}
+
+.forum .text{
+    font-size: 1.45vw;
+    line-height: 2.5vw;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------- MOBILE ------------------------------------------------------------- */
+
+@media only screen and (max-width: 620px){
+
+    /* --------------------------------------------------------- DEFAULT --------------------------------------------------------- */
+
+    .divisor-top{
+        height: 8vh;
+    }
+
+    .screen{
+        height: 92vh;
+    }
+
+    .title{
+        font-size: 8vw;
+    }
+    
+    .text{
+        font-size: 4.5vw;
+    }
+
+    /* --------------------------------------------------------- WELCOME --------------------------------------------------------- */
+
+    .welcome{
+        flex-direction: column;
+    }
+
+    .welcome .text-area, .welcome .image-area{
+        width: 82vw;
+    }
+
+    .welcome .image-area{
+        overflow: hidden;
+        height: 45%;
+    }
+
+    .welcome .text{
+        margin-top: 4vw;
+    }
+
+    .circle{
+        width: 75vw;
+        height: 75vw;
+    }
+
+    /* --------------------------------------------------------- ADVANTAGES --------------------------------------------------------- */
+    
+    .advantages{
+        height: 100vw;
+    }
+
+    .advantages .title{
+        width: 70%;
+    }
+
+    .portrait{
+        width: 90%;
+        height: 70%;
+        overflow-x: scroll;
+    }
+
+    .advantages .list{
+        width: 400%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .advantages .list .items{
+        height: 80%;
+        font-size: 4.5vw;
+    }
+
+    /* --------------------------------------------------------- COMMUNICATION --------------------------------------------------------- */
+
+    .forum{
+        flex-direction: column;
+    }
+
+    .forum .text-area, .forum .image-area{
+        width: 100%;
+    }
+
+    .forum .title{
+        font-size: 6.5vw;
+        width: 100%;
+    }
+
+    .forum .text{
+        font-size: 4.5vw;
+        line-height: 7vw;
+    }
+}
