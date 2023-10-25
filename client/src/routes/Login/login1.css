@@ -48,6 +48,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .5px;
+    color: var(--colorWhite);
 }
 
 .login-box input::placeholder{

@@ -97,7 +97,7 @@ const Cadastro = () => {
       <div className="signin-body">
         <div className="logo" onClick={navigateHome}><img src={orangeLogo} /></div>
         <div className="signin-box">
-          <div className="title">Log in</div>
+          <div className="title">Cadastre-se</div>
           <form onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Nome" className="inputbox" id="name" onChange={handleInput} ></input>
             {errors.name && <span className="text-danger">{errors.name}</span>}
@@ -112,8 +112,11 @@ const Cadastro = () => {
             
             
             <div className="controls">
-              <input type="checkbox" name="useTerms" className="checkBox" id="checkBox" required></input>
-              <a className="terms">Eu aceito os termos de uso</a>
+              <label className="ui-checkbox">
+                <input type="checkbox" name="useTerms" className="checkBox" id="checkBox" required></input> 
+                <span className="ui-checkbox-icon" />
+              </label>
+              <div className="terms">Eu aceito os <Link to="/Termos" className="terms-link">termos de uso</Link></div>
             </div>
             <div className="controls">
               <button type="submit" className="button">Cadastrar</button>
